@@ -19,7 +19,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
             {faqs.map((faq, index) => (
                 <div
                     key={index}
-                    className="bg-white border text-left border-primary/10 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+                    className="bg-white border text-left border-primary/30 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
                     onClick={() => toggleFAQ(index)}
                 >
                     <div className="p-6 flex justify-between items-center">
@@ -31,7 +31,7 @@ export default function FAQAccordion({ faqs }: { faqs: FAQ[] }) {
                     <div
                         className={`px-6 overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 pb-6 opacity-100' : 'max-h-0 opacity-0'}`}
                     >
-                        <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                        <p className="text-button-text/90 leading-relaxed">{faq.answer}</p>
                     </div>
                 </div>
             ))}

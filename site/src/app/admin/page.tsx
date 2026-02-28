@@ -69,13 +69,13 @@ export default function AdminPage() {
     const tabs = ['Home', 'Services', 'About'];
 
     return (
-        <div className="min-h-screen bg-gray-50 p-8">
+        <div className="min-h-screen bg-white p-8">
             <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-sm p-6">
                 <div className="flex justify-between items-center mb-6 border-b pb-4">
-                    <h1 className="text-2xl font-bold text-gray-800">Admin Dashboard</h1>
+                    <h1 className="text-2xl font-bold text-button-text/90">Admin Dashboard</h1>
                     <button
                         onClick={handleLogout}
-                        className="px-4 py-2 border rounded hover:bg-gray-100 transition"
+                        className="px-4 py-2 border rounded hover:bg-secondary transition"
                     >
                         Logout
                     </button>
@@ -88,7 +88,7 @@ export default function AdminPage() {
                             onClick={() => setActiveTab(tab)}
                             className={`px-4 py-2 -mb-px border-b-2 font-medium text-sm transition-colors ${activeTab === tab
                                 ? 'border-primary text-primary'
-                                : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                                : 'border-transparent text-button-text/80 hover:text-button-text/80 hover:border-primary/30'
                                 }`}
                         >
                             {tab}
@@ -97,8 +97,8 @@ export default function AdminPage() {
                 </div>
 
                 <div className="space-y-4">
-                    <h2 className="text-lg font-semibold text-gray-700">{activeTab} Page Content</h2>
-                    <p className="text-sm text-gray-500 mb-2">Use HTML to format the content if necessary.</p>
+                    <h2 className="text-lg font-semibold text-button-text/80">{activeTab} Page Content</h2>
+                    <p className="text-sm text-button-text/80 mb-2">Use HTML to format the content if necessary.</p>
                     <textarea
                         value={content[activeTab] || ''}
                         onChange={(e) => setContent({ ...content, [activeTab]: e.target.value })}

@@ -60,11 +60,11 @@ export default async function Home() {
             />
           </div>
           <div className="md:w-1/2 order-1 md:order-2">
-            <h3 className="text-3xl md:text-4xl font-extrabold font-heading text-gray-900 mb-6">Patient-Centered Care: Empowering Your Recovery Journey</h3>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <h3 className="text-3xl md:text-4xl font-extrabold font-heading text-button-text mb-6">Patient-Centered Care: Empowering Your Recovery Journey</h3>
+            <p className="text-lg text-button-text/90 leading-relaxed mb-6">
               Recovery is most effective when grounded in knowledge. By understanding your body and the mechanisms behind pain or dysfunction, we empower you to take an active role in your own healing process.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed">
+            <p className="text-lg text-button-text/90 leading-relaxed">
               With over 35 years of clinical experience, Joanne combines evidence-informed practice with practical, everyday strategies. We focus on long-term health and sustainable functional improvement, not just temporary relief.
             </p>
           </div>
@@ -75,11 +75,11 @@ export default async function Home() {
       <section className="py-24 px-4 bg-secondary">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="md:w-1/2">
-            <h3 className="text-3xl md:text-4xl font-extrabold font-heading text-gray-900 mb-6">Modern Facilities: A Healing Environment</h3>
-            <p className="text-lg text-gray-600 leading-relaxed mb-6">
+            <h3 className="text-3xl md:text-4xl font-extrabold font-heading text-button-text mb-6">Modern Facilities: A Healing Environment</h3>
+            <p className="text-lg text-button-text/90 leading-relaxed mb-6">
               Our Levin-based clinic is designed to provide a calm, professional, and welcoming atmosphere. We believe that a positive healing environment is a crucial component of effective rehabilitation.
             </p>
-            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+            <p className="text-lg text-button-text/90 leading-relaxed mb-8">
               Whether you are recovering from a sports injury, managing chronic pain, or seeking occupational health support, our state-of-the-art facilities are equipped to support your journey back to peak performance.
             </p>
             <Link href="/about" className="inline-flex items-center text-primary font-bold hover:opacity-80 transition">
@@ -101,12 +101,12 @@ export default async function Home() {
       {/* Important Information Section */}
       <section className="py-24 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold font-heading text-gray-900">What You Need to Know</h2>
-          <p className="mt-4 text-xl text-gray-500">Important details regarding appointments and services.</p>
+          <h2 className="text-3xl md:text-4xl font-extrabold font-heading text-button-text">What You Need to Know</h2>
+          <p className="mt-4 text-xl text-button-text/80">Important details regarding appointments and services.</p>
         </div>
         <div className="max-w-4xl mx-auto">
           <div className="bg-secondary p-8 rounded-2xl">
-            <ul className="list-disc pl-5 text-gray-700 space-y-4 font-medium text-lg">
+            <ul className="list-disc pl-5 text-button-text/80 space-y-4 font-medium text-lg">
               <li>You do <span className="text-primary font-bold">not</span> need to see a GP prior to seeing a physio.</li>
               <li>You do <span className="text-primary font-bold">not</span> need a referral to see a physio.</li>
               <li>Your physiotherapist <span className="font-bold">can</span> lodge an ACC claim if you have had an injury.</li>
@@ -123,11 +123,11 @@ export default async function Home() {
         <div className="max-w-4xl mx-auto">
           {dynamicContent ? (
             <div
-              className="prose max-w-none text-gray-700 mt-8"
+              className="prose max-w-none text-button-text/80 mt-8"
               dangerouslySetInnerHTML={{ __html: dynamicContent }}
             />
           ) : (
-            <div className="text-center text-gray-500 italic py-8">
+            <div className="text-center text-button-text/80 italic py-8">
               <p>Welcome to Joanne Williams Physiotherapy.</p>
               <p className="text-sm mt-2">Additional updates can be managed via the admin panel.</p>
             </div>

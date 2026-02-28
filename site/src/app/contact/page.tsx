@@ -43,12 +43,12 @@ export default function ContactPage() {
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
                     {/* Form Side */}
                     <div className="w-full lg:w-1/2">
-                        <h2 className="text-3xl font-extrabold font-heading text-gray-900 tracking-tight mb-8">Send a Message</h2>
+                        <h2 className="text-3xl font-extrabold font-heading text-button-text tracking-tight mb-8">Send a Message</h2>
                         <ContactForm />
                     </div>
                     {/* Image Side */}
-                    <div className="w-full lg:w-1/2 relative h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-lg border border-primary/10">
-                        <Image src="/images/clinic_reception.png" alt="Warm clinic reception" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+                    <div className="w-full lg:w-1/2 relative h-[500px] lg:h-[650px] rounded-3xl overflow-hidden shadow-lg border border-primary/30">
+                        <Image src="/clinic-room.png" alt="Warm clinic reception" fill className="object-cover hover:scale-105 transition-transform duration-700" />
                     </div>
                 </div>
             </section>
@@ -58,20 +58,20 @@ export default function ContactPage() {
                 <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse items-center gap-16">
                     {/* Text Side */}
                     <div className="w-full lg:w-1/2 space-y-6">
-                        <h2 className="text-3xl lg:text-4xl font-extrabold font-heading text-gray-900 tracking-tight mb-6">Visit Our Clinic</h2>
+                        <h2 className="text-3xl lg:text-4xl font-extrabold font-heading text-button-text tracking-tight mb-6">Visit Our Clinic</h2>
 
-                        <p className="text-lg text-gray-600 font-light leading-relaxed">
+                        <p className="text-lg text-button-text/90 font-light leading-relaxed">
                             Operating in a state-of-the-art facility designed for a calm and professional healing environment.
                         </p>
 
-                        <div className="p-8 bg-white rounded-2xl border border-primary/10 shadow-sm mt-8">
+                        <div className="p-8 bg-white rounded-2xl border border-primary/30 shadow-sm mt-8">
                             <h3 className="text-xl font-bold font-heading text-primary mb-2">Joanne Williams Physiotherapy</h3>
-                            <p className="font-medium text-gray-900">Levin, New Zealand</p>
+                            <p className="font-medium text-button-text">Levin, New Zealand</p>
                         </div>
                     </div>
 
                     {/* Map Side */}
-                    <div className="w-full lg:w-1/2 relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-lg bg-primary/10 border border-primary/10">
+                    <div className="w-full lg:w-1/2 relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-lg bg-primary/10 border border-primary/30">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48698.8146746401!2d152.7937402!3d-40.6179377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d40523fc0245a4b%3A0x500ef6143a2b4b0!2sLevin%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1714000000000!5m2!1sen!2sus"
                             width="100%"
@@ -91,8 +91,8 @@ export default function ContactPage() {
             <section className="bg-white py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-extrabold font-heading text-gray-900 tracking-tight mb-4">Frequently Asked Questions</h2>
-                        <p className="text-lg text-gray-600 font-light">Common questions about our services and appointments.</p>
+                        <h2 className="text-3xl md:text-4xl font-extrabold font-heading text-button-text tracking-tight mb-4">Frequently Asked Questions</h2>
+                        <p className="text-lg text-button-text/90 font-light">Common questions about our services and appointments.</p>
                     </div>
 
                     <FAQAccordion faqs={faqs} />

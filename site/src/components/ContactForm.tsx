@@ -30,7 +30,7 @@ export default function ContactForm() {
                                 required
                                 value={formData.name}
                                 onChange={e => setFormData({ ...formData, name: e.target.value })}
-                                className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                                className="w-full px-4 py-3 bg-white border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                             />
                         </div>
                         <div>
@@ -40,7 +40,7 @@ export default function ContactForm() {
                                 id="phone"
                                 value={formData.phone}
                                 onChange={e => setFormData({ ...formData, phone: e.target.value })}
-                                className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                                className="w-full px-4 py-3 bg-white border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                             />
                         </div>
                     </div>
@@ -52,7 +52,7 @@ export default function ContactForm() {
                             required
                             value={formData.email}
                             onChange={e => setFormData({ ...formData, email: e.target.value })}
-                            className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                            className="w-full px-4 py-3 bg-white border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                         />
                     </div>
                     <div>
@@ -63,7 +63,7 @@ export default function ContactForm() {
                             required
                             value={formData.message}
                             onChange={e => setFormData({ ...formData, message: e.target.value })}
-                            className="w-full px-4 py-3 bg-secondary/50 border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
+                            className="w-full px-4 py-3 bg-white border border-primary/20 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary outline-none transition"
                         ></textarea>
                     </div>
                     <button
